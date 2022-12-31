@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum Theme: String {
+enum Theme: String { // Swift will automatically create raw values (Strings) from each case name.
     case bubblegum
     case buttercup
     case indigo
@@ -36,5 +36,9 @@ enum Theme: String {
     
     var mainColor: Color {
         Color(rawValue)
+    }
+    
+    var name: String {
+        rawValue.capitalized
     }
 }

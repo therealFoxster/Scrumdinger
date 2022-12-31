@@ -32,6 +32,7 @@ struct CardView: View {
         }
         .padding()
         .foregroundColor(scrum.theme.accentColor)
+        .frame(height: 60)
     }
 }
 
