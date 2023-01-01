@@ -33,6 +33,19 @@ extension DailyScrum {
             self.name = name
         }
     }
+    
+    // Editable properties of DailyScrum.
+    struct Data {
+        var title: String = ""
+        var attendees: [Attendee] = []
+        var lengthInMinutes: Double = 5 // Double because meeting length will be set using a Slider which works with Double values.
+        var theme: Theme = .seafoam
+        // All properties have default values; -> compiler will create an initializer with no arguments.
+        
+        var data: Data {
+            Data(title: title, attendees: attendees, lengthInMinutes: Double(lengthInMinutes), theme: theme)
+        }
+    }
 }
 
 extension DailyScrum {
