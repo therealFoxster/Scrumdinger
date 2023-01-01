@@ -7,7 +7,10 @@
 
 import SwiftUI
 
-enum Theme: String { // Swift will automatically create raw values (Strings) from each case name.
+enum Theme: String, // Swift will automatically create raw values (Strings) from each case name.
+            CaseIterable, // For use with ForEach.
+            Identifiable // To skip "id:" argument when used in ForEach.
+{
     case bubblegum
     case buttercup
     case indigo
@@ -40,5 +43,9 @@ enum Theme: String { // Swift will automatically create raw values (Strings) fro
     
     var name: String {
         rawValue.capitalized
+    }
+    
+    var id: String {
+        name // Is unique because each case is unique.
     }
 }

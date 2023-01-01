@@ -41,10 +41,17 @@ extension DailyScrum {
         var lengthInMinutes: Double = 5 // Double because meeting length will be set using a Slider which works with Double values.
         var theme: Theme = .seafoam
         // All properties have default values; -> compiler will create an initializer with no arguments.
-        
-        var data: Data {
-            Data(title: title, attendees: attendees, lengthInMinutes: Double(lengthInMinutes), theme: theme)
-        }
+    }
+    
+    var data: Data {
+        Data(title: title, attendees: attendees, lengthInMinutes: Double(lengthInMinutes), theme: theme)
+    }
+    
+    mutating func update(from data: Data) {
+        title = data.title
+        attendees = data.attendees
+        lengthInMinutes = Int(data.lengthInMinutes)
+        theme = data.theme
     }
 }
 
