@@ -18,7 +18,7 @@ struct DetailView: View {
             // MARK: Meeting info.
             Section {
                 NavigationLink {
-                    MeetingView()
+                    MeetingView(scrum: $scrum)
                 } label: {
                     Label("Start Meeting", systemImage: "timer")
                         .font(.headline)
