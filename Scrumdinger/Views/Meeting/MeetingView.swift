@@ -53,6 +53,9 @@ struct MeetingView: View {
         .onDisappear {
             // Timer stops when MeetingView instance disappears (meeting ended).
             scrumTimer.stopScrum()
+            
+            let newHistory = History(attendees: scrum.attendees, lengthInMinutes: scrumTimer.secondsElapsed / 60)
+            scrum.history.insert(newHistory, at: 0)
         }
         .navigationBarTitleDisplayMode(.inline)
     }

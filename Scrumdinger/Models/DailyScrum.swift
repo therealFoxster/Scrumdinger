@@ -13,6 +13,7 @@ struct DailyScrum: Identifiable {
     var attendees: [Attendee]
     var lengthInMinutes: Int
     var theme: Theme
+    var history: [History] = []
     
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {
         self.id = id
@@ -39,7 +40,7 @@ extension DailyScrum {
         var title: String = ""
         var attendees: [Attendee] = []
         var lengthInMinutes: Double = 5 // Double because meeting length will be set using a Slider which works with Double values.
-        var theme: Theme = .seafoam
+        var theme: Theme = .lavender
         // All properties have default values; -> compiler will create an initializer with no arguments.
     }
     
@@ -48,6 +49,14 @@ extension DailyScrum {
     }
     
     mutating func update(from data: Data) {
+        title = data.title
+        attendees = data.attendees
+        lengthInMinutes = Int(data.lengthInMinutes)
+        theme = data.theme
+    }
+    
+    init(data: Data) {
+        id = UUID()
         title = data.title
         attendees = data.attendees
         lengthInMinutes = Int(data.lengthInMinutes)

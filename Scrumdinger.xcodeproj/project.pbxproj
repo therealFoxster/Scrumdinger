@@ -15,6 +15,7 @@
 		EC2FD9E829629EB900E362F6 /* MeetingViewFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FD9E729629EB900E362F6 /* MeetingViewFooter.swift */; };
 		EC2FD9EA2962A55F00E362F6 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FD9E92962A55F00E362F6 /* AVPlayer+Ding.swift */; };
 		EC2FD9ED2962A59100E362F6 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC2FD9EC2962A59100E362F6 /* ding.wav */; };
+		EC2FD9EF2962AC0D00E362F6 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FD9EE2962AC0D00E362F6 /* History.swift */; };
 		EC3D03E1296013E50011D26A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3D03E0296013E50011D26A /* DetailView.swift */; };
 		EC7C7CAF29613969007E4EF1 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C7CAE29613969007E4EF1 /* DetailEditView.swift */; };
 		EC8CBCB6296149F800F7DD7F /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8CBCB5296149F800F7DD7F /* ThemeView.swift */; };
@@ -39,6 +40,7 @@
 		EC2FD9E729629EB900E362F6 /* MeetingViewFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingViewFooter.swift; sourceTree = "<group>"; };
 		EC2FD9E92962A55F00E362F6 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		EC2FD9EC2962A59100E362F6 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
+		EC2FD9EE2962AC0D00E362F6 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		EC3D03E0296013E50011D26A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		EC7C7CAE29613969007E4EF1 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		EC8CBCB5296149F800F7DD7F /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
@@ -98,8 +100,8 @@
 		EC2FD9E629629C4A00E362F6 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				EC8CBCB5296149F800F7DD7F /* ThemeView.swift */,
 				EC8CBCB729614B8700F7DD7F /* ThemePicker.swift */,
+				EC8CBCB5296149F800F7DD7F /* ThemeView.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -159,6 +161,7 @@
 				ECAB3983295EB30A00375D31 /* DailyScrum.swift */,
 				EC2FD9E129629C1B00E362F6 /* ScrumTimer.swift */,
 				EC2FD9E92962A55F00E362F6 /* AVPlayer+Ding.swift */,
+				EC2FD9EE2962AC0D00E362F6 /* History.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC2FD9EF2962AC0D00E362F6 /* History.swift in Sources */,
 				EC8CBCB829614B8700F7DD7F /* ThemePicker.swift in Sources */,
 				EC2FD9DB29629A8000E362F6 /* ScrumProgressViewStyle.swift in Sources */,
 				EC2FD9E229629C1B00E362F6 /* ScrumTimer.swift in Sources */,
