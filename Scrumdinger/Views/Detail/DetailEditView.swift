@@ -64,6 +64,7 @@ struct DetailEditView: View {
             }
         }
         .navigationTitle(data.title)
+        .navigationBarTitleDisplayMode(.large)
     }
 }
 
