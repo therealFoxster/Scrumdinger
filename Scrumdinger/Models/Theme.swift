@@ -9,7 +9,8 @@ import SwiftUI
 
 enum Theme: String, // Swift will automatically create raw values (Strings) from each case name.
             CaseIterable, // For use with ForEach.
-            Identifiable // To skip "id:" argument when used in ForEach.
+            Identifiable, // To skip "id:" argument when used in ForEach.
+            Codable // Decodable & Encodable: can be serialized to and from JSON.
 {
     case bubblegum
     case buttercup

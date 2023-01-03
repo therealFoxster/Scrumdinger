@@ -29,6 +29,7 @@
 		ECAB3987295EB58400375D31 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAB3986295EB58400375D31 /* CardView.swift */; };
 		ECAB3989295EB78C00375D31 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAB3988295EB78C00375D31 /* TrailingIconLabelStyle.swift */; };
 		ECAB398B295FBE0A00375D31 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAB398A295FBE0A00375D31 /* ScrumsView.swift */; };
+		ECFD4A382963D05D00777258 /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFD4A372963D05D00777258 /* ScrumStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		ECAB3986295EB58400375D31 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		ECAB3988295EB78C00375D31 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		ECAB398A295FBE0A00375D31 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
+		ECFD4A372963D05D00777258 /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				EC2FD9E129629C1B00E362F6 /* ScrumTimer.swift */,
 				EC2FD9E92962A55F00E362F6 /* AVPlayer+Ding.swift */,
 				EC2FD9EE2962AC0D00E362F6 /* History.swift */,
+				ECFD4A372963D05D00777258 /* ScrumStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -169,8 +172,8 @@
 		ECAB3985295EB57700375D31 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				ECAB3986295EB58400375D31 /* CardView.swift */,
 				ECAB398A295FBE0A00375D31 /* ScrumsView.swift */,
+				ECAB3986295EB58400375D31 /* CardView.swift */,
 				EC2FD9E429629C3300E362F6 /* Meeting */,
 				EC2FD9E529629C4000E362F6 /* Detail */,
 			);
@@ -254,6 +257,7 @@
 				EC8CBCB829614B8700F7DD7F /* ThemePicker.swift in Sources */,
 				EC2FD9DB29629A8000E362F6 /* ScrumProgressViewStyle.swift in Sources */,
 				EC2FD9E229629C1B00E362F6 /* ScrumTimer.swift in Sources */,
+				ECFD4A382963D05D00777258 /* ScrumStore.swift in Sources */,
 				ECAB3984295EB30A00375D31 /* DailyScrum.swift in Sources */,
 				EC3D03E1296013E50011D26A /* DetailView.swift in Sources */,
 				EC19D366296282A900F9A989 /* MeetingViewHeader.swift in Sources */,
