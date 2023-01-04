@@ -37,7 +37,7 @@ extension DailyScrum {
     
     // Editable properties of DailyScrum.
     struct Data {
-        var title: String = ""
+        var title: String = "New Scrum"
         var attendees: [Attendee] = []
         var lengthInMinutes: Double = 5 // Double because meeting length will be set using a Slider which works with Double values.
         var theme: Theme = .lavender
